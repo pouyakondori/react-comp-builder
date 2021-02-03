@@ -4,7 +4,6 @@ const reducer = (state = {}, action) => {
             const {payload: {modalId}} = action
             state= {...state, [modalId]: !state[modalId]}
     }
-    console.log(state)
     return state
 }
 export default reducer;
